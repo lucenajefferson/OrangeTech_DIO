@@ -19,4 +19,4 @@
     custoViagem = (distancia / kmPorLitro) * precoCombustivel
 
     // Imprimir o custo total da viagem.
-    console.log(custoViagem);
+    console.log(custoViagem.toFixed(2));
