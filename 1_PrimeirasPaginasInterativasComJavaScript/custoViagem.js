@@ -6,11 +6,17 @@
 
 // Nessa V1.0 utilizaremos valores fixos para desenvolvermos a lógica.
 
+    // Qual a distância a ser percorrida?
     distancia = 180;
+    // Quantos KM por Litro o veículo faz?
     kmPorLitro = 10;
+    // Qual o valor do combustível?
     precoCombustivel = 5.99;
+    // Custo de viagem será definido após o cálculo.
     custoViagem = 0;
 
+    // Custo de viagem é (distância / consumo) * preço do combustível.
     custoViagem = (distancia / kmPorLitro) * precoCombustivel
 
+    // Imprimir o custo total da viagem.
     console.log(custoViagem);
