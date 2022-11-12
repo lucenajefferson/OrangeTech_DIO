@@ -6,20 +6,24 @@
         Imprimir o custo total da viagem. */
 
     // Declaração de variáveis
-    tipoCombustivel = 0;
-    precoCombustível = 0;
-    distanciaKM = 0;
+    precoEtanol = 3.99;
+    precoGasolina = 4.99;
+    distanciaKM = 180;
+    consumoCombustível = 9;
     custoViagem = 0;
-
+    tipoCombustivel = 'Gasolina';
+    
     // Informativo ao usuário.
     console.log("Olá, este sistema calcula o custo de uma viagem.");
-    console.log("Qual o tipo de combustível do veículo:");
-    console.log("1 - Gasolina");
-    console.log("2 - Etanol");
-    console.log("3 - Diesel");
 
-    // Ler o tipo de combustível utilizado.
-    tipoCombustivel = prompt("Por favor digite o tipo de combustível: ");
+    // Se o tipo de combustível for Etanol, calcule.
+    if (tipoCombustivel === 'Etanol'){
+        custoViagem = (distanciaKM / consumoCombustível) * precoEtanol;
+    }
+    // Se não, calcule pelo preço da gasolina.
+    else {
+        custoViagem = (distanciaKM / consumoCombustível) * precoGasolina;
+    }
 
-    
-
+    // Imprimir o resultado final.
+    console.log("O custo da viagem usando " + tipoCombustivel + " será de R$" + custoViagem.toFixed(2));
