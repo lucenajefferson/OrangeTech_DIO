@@ -19,7 +19,7 @@ IMC em adultos Condição:
 
     // Declaração de variáveis.
     imc = 0;
-    peso = 26;
+    peso = 996;
     altura = 1.65;
     resultado = "";
 
@@ -36,7 +36,7 @@ IMC em adultos Condição:
     } else if (imc >= 30 && imc < 40){
         resultado = "com obesidade do tipo I.";
     } else {
-        resultado = "com obesidade Mórbida.";
+        resultado = "com obesidade mórbida.";
     };
 
     // Apresentação do resultado da regra.
